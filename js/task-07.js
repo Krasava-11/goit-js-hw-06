@@ -3,6 +3,8 @@ const refs = {
   span: document.querySelector("#text"),
 };
 
+refs.span.style.fontSize = refs.input.value + "px";
+
 const onChangeSizeText = (event) => {
   refs.span.style.fontSize = event.currentTarget.value + "px";
 };
